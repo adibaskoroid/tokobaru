@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budi Book Covers | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="sec-nav">
+        <div class="container">
+            <div class="logo-box">
+                <div class="rect-logo"></div>
+                <h1 class="title-site">BOOK COVERS</h1>
+            </div>
+            <nav class="menu-main">
+                <a href="#">Fiction</a>
+                <a href="#">Non-fiction</a>
+                <a href="#">Young Adult</a>
+                <a href="#">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="sec-display">
+        <div class="container">
+            <div class="row" id="gallery-grid">
+                <div class="col-1-5--md col-1-3--sm col-1-2--xs">
+                    <article class="photonBlock" onclick="openFullCover('images/cover1.jpg')">
+                        <div class="content">
+                            <img src="https://danielsen-bookcovers.com/wp-content/uploads/2026/02/Irish-star-410x640.jpg" alt="Cover 1">
+                        </div>
+                    </article>
+                </div>
+                <div class="col-1-5--md col-1-3--sm col-1-2--xs">
+                    <article class="photonBlock" onclick="openFullCover('https://danielsen-bookcovers.com/wp-content/uploads/2026/01/Loublie-391x640.jpg')">
+                        <div class="content">
+                            <img src="https://danielsen-bookcovers.com/wp-content/uploads/2026/01/Loublie-391x640.jpg" alt="Cover 2">
+                        </div>
+                    </article>
+                </div>
+                </div>
+        </div>
+    </main>
+
+    <div id="coverModal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="fullImg">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
